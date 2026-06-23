@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fateh Digital Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── HEADER ──────────────────────────────────────────── -->
+  <header id="site-header">
+    <nav class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">Fateh Digital</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#services"  data-i18n="nav_services">Services</a></li>
+        <li><a href="#why-us"    data-i18n="nav_why">Why Us</a></li>
+        <li><a href="#contact"   data-i18n="nav_contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn" id="lang-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span class="lang-flag" id="lang-flag">🇬🇧</span>
+            <span id="lang-label">EN</span>
+            <span class="lang-arrow">▾</span>
+          </button>
+          <ul class="lang-dropdown" id="lang-dropdown" role="listbox">
+            <li role="option" data-lang="en"  class="active">🇬🇧 English</li>
+            <li role="option" data-lang="pa">🇮🇳 ਪੰਜਾਬੀ</li>
+          </ul>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ─── HERO ────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" data-i18n="hero_badge">Premium Digital Service Center</div>
+      <h1 class="hero-headline">
+        <span class="headline-line" data-i18n="hero_h1_1">One Place For All</span><br>
+        <span class="headline-line shimmer" data-i18n="hero_h1_2">Digital &amp; Professional</span><br>
+        <span class="headline-line" data-i18n="hero_h1_3">Services</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero_sub">
+        CSC Services · Coding Coaching · AI Coaching · ITR Filing · Share Market Guidance · Demat Accounts · Travel Booking · Document Services and more.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero_cta_primary">Get in Touch</a>
+        <a href="#services" class="btn btn-ghost" data-i18n="hero_cta_ghost">Explore Services</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="visual-card card-float">
+        <div class="visual-stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label" data-i18n="stat_services">Services</span>
+        </div>
+        <div class="visual-divider"></div>
+        <div class="visual-stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label" data-i18n="stat_digital">Digital</span>
+        </div>
+        <div class="visual-divider"></div>
+        <div class="visual-stat">
+          <span class="stat-num">1</span>
+          <span class="stat-label" data-i18n="stat_stop">Stop</span>
+        </div>
+      </div>
+      <img
+        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80"
+        alt="Digital workspace"
+        class="hero-img"
+        loading="eager"
+      />
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ─────────────────────────────────────────── -->
+  <section id="services" class="services-section">
+    <div class="section-header">
+      <p class="section-eyebrow" data-i18n="services_eyebrow">What We Offer</p>
+      <h2 class="section-title" data-i18n="services_title">Our Services</h2>
+    </div>
+
+    <div class="services-grid" id="services-grid">
+      <!-- Cards injected by JS with i18n support -->
+    </div>
+  </section>
+
+  <!-- ─── WHY US ────────────────────────────────────────────── -->
+  <section id="why-us" class="why-section">
+    <div class="why-inner">
+      <div class="why-text">
+        <p class="section-eyebrow" data-i18n="why_eyebrow">Our Edge</p>
+        <h2 class="section-title" data-i18n="why_title">Why Choose Fateh Digital?</h2>
+        <p class="why-body" data-i18n="why_body">
+          We combine the reach of a government-authorised Common Service Centre with the expertise of a modern digital studio. Whether you need to file taxes, open a demat account, build an app, or learn AI — we have you covered under one roof with transparency and speed.
+        </p>
+        <ul class="why-list" id="why-list">
+          <!-- Injected by JS -->
+        </ul>
+      </div>
+      <div class="why-visual">
+        <div class="trust-badge">
+          <span class="trust-icon">✦</span>
+          <span data-i18n="trust_label">Trusted Digital Partner</span>
+        </div>
+        <div class="feature-pills" id="feature-pills">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────────── -->
+  <section id="contact" class="contact-section">
+    <div class="section-header">
+      <p class="section-eyebrow" data-i18n="contact_eyebrow">Reach Us</p>
+      <h2 class="section-title" data-i18n="contact_title">Contact Us</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-item">
+          <span class="info-icon">📍</span>
+          <div>
+            <strong data-i18n="contact_address_label">Address</strong>
+            <p data-i18n="contact_address_val">Your full address here, City, State – PIN</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">📞</span>
+          <div>
+            <strong data-i18n="contact_phone_label">Phone / WhatsApp</strong>
+            <p>+91 XXXXX XXXXX</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">✉️</span>
+          <div>
+            <strong data-i18n="contact_email_label">Email</strong>
+            <p>info@fatehdigital.in</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">🕐</span>
+          <div>
+            <strong data-i18n="contact_hours_label">Hours</strong>
+            <p data-i18n="contact_hours_val">Mon – Sat: 9:00 AM – 7:00 PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map-placeholder">
+        <div class="map-inner">
+          <span class="map-icon">🗺️</span>
+          <p data-i18n="map_placeholder">Embed Google Maps here</p>
+          <a href="https://maps.google.com" target="_blank" class="btn btn-primary" data-i18n="map_cta">Open in Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ───────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">Fateh Digital</span>
+      </div>
+      <p class="footer-tagline" data-i18n="footer_tagline">Empowering communities through technology.</p>
+      <p class="footer-copy">© 2026 Fateh Digital Services. <span data-i18n="footer_rights">All Rights Reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
